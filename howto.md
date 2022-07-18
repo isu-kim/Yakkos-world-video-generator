@@ -1,3 +1,4 @@
+
 # Using Program
 There are two ways of using this program, by `jupyter notebook` and normal `python`.
 
@@ -88,14 +89,14 @@ This sets caption's font style of the video. Check here for more [information](h
 
 ### font_color
 **Jupyter Notebook**: Use `font_color="white"` for function `process_all()`
-**Python Commandline**: Use -fc "white"` or `--font_color "white"` when executing `run_me.py`
+**Python Commandline**: Use-fc `"white"` or `--font_color "white"` when executing `run_me.py`
 **Default**:  `"white"`
 
 This sets caption's font color of the video. Check here for more [information](https://ffmpeg.org/ffmpeg-filters.html#drawtext) on colors.
 
 ### font_size
 **Jupyter Notebook**: Use `font_size="20"` for function `process_all()`
-**Python Commandline**: Use `-fc 20` or `--font_color 20` when executing `run_me.py`
+**Python Commandline**: Use `-fs 20` or `--font_size 20` when executing `run_me.py`
 **Default**:  `20` (in `int`)
 
 This sets caption's font size of the video. Check here for more [information](https://ffmpeg.org/ffmpeg-filters.html#drawtext) on font sizes.
@@ -152,3 +153,4 @@ This is experimental feature. This options sets whether or not to use multithrea
 The multithreading of this program was **not ideally** optimized. Unless you have a decent CPU with enough RAM left, **DO NOT** use this option. It might crash the program.
 
 *PC with `i9-7940x` CPU and `32GB` RAM had all its CPU cores loaded with ffmpeg tasks and used 29GB of RAM and took about 34.72 seconds*`
+ 

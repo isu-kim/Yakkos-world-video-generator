@@ -4,6 +4,7 @@ import os
 import shutil
 import timeit
 import threading
+import argparse
 
 
 def cut_video(data: pd.Series, tmp_dir: str):
@@ -101,16 +102,16 @@ A function that changes video speed into designated speed.
                   video_name.replace(".mp4", "s.mp4"))
     else:  # if speed was faster than 0.5, just apply the speed
         subprocess.check_output([
-        "ffmpeg",
-        "-i",
-        video_name,
-        "-vf",
-        "setpts=(PTS-STARTPTS)/%f" % speed,
-        "-af",
-        "atempo=%f" %speed,
-        video_name.replace(".mp4", "s.mp4"),
-        "-y"],
-        stderr=subprocess.STDOUT)
+            "ffmpeg",
+            "-i",
+            video_name,
+            "-vf",
+            "setpts=(PTS-STARTPTS)/%f" % speed,
+            "-af",
+            "atempo=%f" % speed,
+            video_name.replace(".mp4", "s.mp4"),
+            "-y"],
+            stderr=subprocess.STDOUT)
 
 
 def add_caption(video_name: str, country_name: str, value: str,
@@ -168,17 +169,17 @@ def add_caption(video_name: str, country_name: str, value: str,
     else:  # if value was other than this, raise ValueError
         raise ValueError
     subprocess.check_output([
-                            "ffmpeg",
-                            "-i",
-                            video_name,
-                            "-vf",
-                            "drawtext=fontfile=/%s:text='%s':fontcolor=%s:fontsize=%d:box=%d:boxcolor=%s@%f:boxborderw=5:x=%s:y=%s"
-                            % (font_dir, text, font_color, font_size, box_enabled, box_color, box_opacity, text_position_x, text_position_y),
-                            "-codec:a",
-                            "copy",
-                            video_name.replace("s.mp4", "f.mp4"),
-                            "-y"],
-                            stderr=subprocess.STDOUT)
+        "ffmpeg",
+        "-i",
+        video_name,
+        "-vf",
+        "drawtext=fontfile=/%s:text='%s':fontcolor=%s:fontsize=%d:box=%d:boxcolor=%s@%f:boxborderw=5:x=%s:y=%s"
+        % (font_dir, text, font_color, font_size, box_enabled, box_color, box_opacity, text_position_x, text_position_y),
+        "-codec:a",
+        "copy",
+        video_name.replace("s.mp4", "f.mp4"),
+        "-y"],
+        stderr=subprocess.STDOUT)
 
 
 def calculate_play_speed(cur_value, avg, bigger_the_faster: bool):
@@ -375,7 +376,111 @@ def process_all(data: pd.DataFrame, clean_up=True, auto_calculate_speed=True,
         os.remove("./files.txt")
 
 
+def add_arguments(parser):
+    """
+    A function that adds arguments into the parser
+    :param parser: the parser object that this script is using
+    """
+    parser.add_argument("-cu", "--clean_up", required=False,
+                        default=True,
+                        help="Cleans up after task was done")
+    parser.add_argument("-ac", "--auto_calculate_speed", required=False,
+                        default=True,
+                        help="Automatically calculate playspeed by values")
+    parser.add_argument("-bf", "--bigger_the_faster", required=False,
+                        default=True,
+                        help="Sets bigger values into faster playspeed")
+    parser.add_argument("-fd", "--font_directory", required=False,
+                        default="../fonts/comic.ttf",
+                        help="Sets font directory for video caption")
+    parser.add_argument("-fc", "--font_color", required=False,
+                        default="white",
+                        help="Sets font color")
+    parser.add_argument("-fs", "--font_size", required=False,
+                        default=20,
+                        help="Sets font size")
+    parser.add_argument("-be", "--box_enabled", required=False,
+                        default=True,
+                        help="Sets whether or not to make text box for caption")
+    parser.add_argument("-bo", "--box_opacity", required=False,
+                        default=0.5,
+                        help="Sets opacity for caption box")
+    parser.add_argument("-bc", "--box_color", required=False,
+                        default="black",
+                        help="Sets caption box's color")
+    parser.add_argument("-bp", "--box_padding", required=False,
+                        default=10,
+                        help="Sets caption box padding from corners")
+    parser.add_argument("-tp", "--text_position", required=False,
+                        default="(\"left\", \"down\")",
+                        help="Sets caption's location")
+    parser.add_argument("-t", "--threading", required=False,
+                        default=False,
+                        help="Sets multithreading feature")
+
+
+def process_args(args):
+    """
+    A function that processes arguments
+    :param args: a dictionary that is for arguments
+    """
+    clean_up = args['clean_up']
+    auto_calculate_speed = args['auto_calculate_speed']
+    bigger_the_faster = args['bigger_the_faster']
+    font_directory = args['font_directory']
+    font_color = args['font_color']
+    font_size = args['font_size']
+    box_enabled = args['box_enabled']
+    box_opacity = args['box_opacity']
+    box_color = args['box_color']
+    box_padding = args['box_padding']
+    text_position = eval(args['text_position'])  # since this is tuple
+    threading = args['threading']
+
+    print("-----=[ Settings ]=-----")
+    print("Auto Calculate : " + str(auto_calculate_speed))
+    print("Clean Up : " + str(clean_up))
+    print("Bigger the faster : " + str(bigger_the_faster))
+    print("Font Directory : " + font_directory)
+    print("Font Color : " + font_color)
+    print("Font Size : " + str(font_size))
+    print("Caption Box Enabled : " + str(box_enabled))
+    if box_enabled:
+        print("Box Opacity : " + str(box_opacity))
+        print("Box Color : " + box_color)
+        print("Box Padding : " + str(box_padding))
+    print("Text Position : " + str(text_position))
+    print("Threading : " + str(threading))
+
+    data = pd.DataFrame()
+    data = pd.read_csv("../data.csv")
+
+    start = timeit.default_timer()
+    process_all(data=data, clean_up=clean_up,
+                auto_calculate_speed=auto_calculate_speed,
+                bigger_the_faster=bigger_the_faster,
+                font_dir=font_directory,
+                font_color=font_color, font_size=font_size,
+                box_enabled=box_enabled, box_opacity=box_opacity,
+                box_color=box_color, box_padding=box_padding,
+                text_position=text_position, threading_enabled=threading)
+    stop = timeit.default_timer()
+
+    print("[+] Finished task in " + str(stop - start))
+
+
 if __name__ == "__main__":
+    desc_string = """
+    Yakko's World Generator - Generate video using countries values
+    https://github.com/gooday2die/Yakkos-world-video-generator/
+    """
+
+    parser = argparse.ArgumentParser(description=desc_string)
+    add_arguments(parser)
+
+    args = vars(parser.parse_args())
+    process_args(args)
+
     data = pd.DataFrame()
     data = pd.read_csv("../data.csv")
 
