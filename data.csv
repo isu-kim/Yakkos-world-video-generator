@@ -1,163 +1,163 @@
 ,name,value,playspeed
-0,Break0,0,0
-1,United States,0,0
-2,Canada,0,0
-3,Mexico,0,0
-4,Panama,0,0
-5,Haiti,0,0
-6,Jamaica,0,0
-7,Peru,0,0
-8,Dominican Rep.,0,0
-9,Cuba,0,0
-10,Greenland,0,0
-11,El Salvador,0,0
-12,Puerto Rico,0,0
-13,Colombia,0,0
-14,Venezuela,0,0
-15,Honduras,0,0
-16,Guyana,0,0
-17,Guatemala,0,0
-18,Bolivia,0,0
-19,Argentina,0,0
-20,Ecuador,0,0
-21,Chile,0,0
-22,Brazil,0,0
-23,Costa Rica,0,0
-24,Belize,0,0
-25,Nicaragua,0,0
-26,Bermuda,0,0
-27,Bahamas,0,0
-28,Tobago,0,0
-29,San Juan,0,0
-30,Paraguay,0,0
-31,Uruguay,0,0
-32,Suriname,0,0
-33,French Guiana,0,0
-34,Barbados,0,0
-35,Guam,0,0
-36,Break1,0,0
-37,Norway,0,0
-38,Sweden,0,0
-39,Iceland,0,0
-40,Finland,0,0
-41,Germany,0,0
-42,Switzerland,0,0
-43,Austria,0,0
-44,Czech Rep.,0,0
-45,Italy,0,0
-46,Turkey,0,0
-47,Greece,0,0
-48,Poland,0,0
-49,Romania,0,0
-50,Scotland,0,0
-51,Albania,0,0
-52,Ireland,0,0
-53,Russia,0,0
-54,Oman,0,0
-55,Bulgaria,0,0
-56,Saudi Arabia,0,0
-57,Hungary,0,0
-58,Cyprus,0,0
-59,Iraq,0,0
-60,Iran,0,0
-61,Syria,0,0
-62,Lebanon,0,0
-63,Israel,0,0
-64,Jordan,0,0
-65,Yemen,0,0
-66,Kuwait,0,0
-67,Bahrain,0,0
-68,Netherlands,0,0
-69,Luxembourg,0,0
-70,Belgium,0,0
-71,Portugal,0,0
-72,France,0,0
-73,England,0,0
-74,Denmark,0,0
-75,Spain,0,0
-76,Break2,0,0
-77,India,0,0
-78,Pakistan,0,0
-79,Myanmar,0,0
-80,Afghanistan,0,0
-81,Thailand,0,0
-82,Nepal,0,0
-83,Bhutan,0,0
-84,Cambodia,0,0
-85,Malaysia,0,0
-86,Bangladesh,0,0
-87,China,0,0
-88,Korea,0,0
-89,Japan,0,0
-90,Mongolia,0,0
-91,Lao PDR,0,0
-92,Tibet,0,0
-93,Indonesia,0,0
-94,Philippines,0,0
-95,Taiwan,0,0
-96,Sri Lanka,0,0
-97,Papua New Guinea,0,0
-98,Sumatra,0,0
-99,New Zealand,0,0
-100,Brunei,0,0
-101,Vietnam,0,0
-102,Tunisia,0,0
-103,Morocco,0,0
-104,Uganda,0,0
-105,Angola,0,0
-106,Zimbabwe,0,0
-107,Djibouti,0,0
-108,Botswana,0,0
-109,Mozambique,0,0
-110,Zambia,0,0
-111,Swaziland,0,0
-112,Gambia,0,0
-113,Guinea,0,0
-114,Algeria,0,0
-115,Ghana,0,0
-116,Break3,0,0
-117,Burundi,0,0
-118,Lesotho,0,0
-119,Malawi,0,0
-120,Togo,0,0
-121,W. Sahara,0,0
-122,Niger,0,0
-123,Nigeria,0,0
-124,Chad,0,0
-125,Liberia,0,0
-126,Egypt,0,0
-127,Benin,0,0
-128,Gabon,0,0
-129,Tanzania,0,0
-130,Somalia,0,0
-131,Kenya,0,0
-132,Mali,0,0
-133,Sierra Leone,0,0
-134,Algiers,0,0
-135,Dahomey,0,0
-136,Namibia,0,0
-137,Senegal,0,0
-138,Libya,0,0
-139,Cameroon,0,0
-140,Congo,0,0
-141,Dem. Rep. Congo,0,0
-142,Ethiopia,0,0
-143,Guinea-Bissau,0,0
-144,Madagascar,0,0
-145,Rwanda,0,0
-146,Mayotte,0,0
-147,Cayman Is.,0,0
-148,Hong Kong,0,0
-149,United Arab Emirates,0,0
-150,Qatar,0,0
-151,Yugoslavia,0,0
-152,Crete,0,0
-153,Mauritania,0,0
-154,Transylvania,0,0
-155,Monaco,0,0
-156,Liechtenstein,0,0
-157,Malta,0,0
-158,West Bank,0,0
-159,Fiji,0,0
-160,Australia,0,0
-161,Sudan,0,0
+0,Break0,46,0
+1,United States,78,0
+2,Canada,13,0
+3,Mexico,93,0
+4,Panama,19,0
+5,Haiti,38,0
+6,Jamaica,17,0
+7,Peru,83,0
+8,Dominican Rep.,38,0
+9,Cuba,46,0
+10,Greenland,73,0
+11,El Salvador,35,0
+12,Puerto Rico,16,0
+13,Colombia,88,0
+14,Venezuela,58,0
+15,Honduras,63,0
+16,Guyana,49,0
+17,Guatemala,25,0
+18,Bolivia,53,0
+19,Argentina,26,0
+20,Ecuador,65,0
+21,Chile,76,0
+22,Brazil,85,0
+23,Costa Rica,60,0
+24,Belize,74,0
+25,Nicaragua,42,0
+26,Bermuda,15,0
+27,Bahamas,90,0
+28,Tobago,90,0
+29,San Juan,76,0
+30,Paraguay,84,0
+31,Uruguay,22,0
+32,Suriname,94,0
+33,French Guiana,53,0
+34,Barbados,32,0
+35,Guam,35,0
+36,Break1,40,0
+37,Norway,99,0
+38,Sweden,42,0
+39,Iceland,71,0
+40,Finland,79,0
+41,Germany,27,0
+42,Switzerland,41,0
+43,Austria,21,0
+44,Czech Rep.,33,0
+45,Italy,14,0
+46,Turkey,11,0
+47,Greece,88,0
+48,Poland,63,0
+49,Romania,43,0
+50,Scotland,97,0
+51,Albania,18,0
+52,Ireland,74,0
+53,Russia,86,0
+54,Oman,53,0
+55,Bulgaria,93,0
+56,Saudi Arabia,36,0
+57,Hungary,13,0
+58,Cyprus,62,0
+59,Iraq,48,0
+60,Iran,94,0
+61,Syria,29,0
+62,Lebanon,79,0
+63,Israel,66,0
+64,Jordan,15,0
+65,Yemen,73,0
+66,Kuwait,15,0
+67,Bahrain,90,0
+68,Netherlands,50,0
+69,Luxembourg,54,0
+70,Belgium,78,0
+71,Portugal,57,0
+72,France,59,0
+73,England,92,0
+74,Denmark,21,0
+75,Spain,57,0
+76,Break2,19,0
+77,India,56,0
+78,Pakistan,55,0
+79,Myanmar,72,0
+80,Afghanistan,50,0
+81,Thailand,78,0
+82,Nepal,81,0
+83,Bhutan,43,0
+84,Cambodia,78,0
+85,Malaysia,48,0
+86,Bangladesh,65,0
+87,China,16,0
+88,Korea,47,0
+89,Japan,13,0
+90,Mongolia,23,0
+91,Lao PDR,36,0
+92,Tibet,39,0
+93,Indonesia,42,0
+94,Philippines,18,0
+95,Taiwan,50,0
+96,Sri Lanka,14,0
+97,Papua New Guinea,60,0
+98,Sumatra,37,0
+99,New Zealand,98,0
+100,Brunei,50,0
+101,Vietnam,55,0
+102,Tunisia,28,0
+103,Morocco,79,0
+104,Uganda,39,0
+105,Angola,23,0
+106,Zimbabwe,64,0
+107,Djibouti,30,0
+108,Botswana,86,0
+109,Mozambique,50,0
+110,Zambia,57,0
+111,Swaziland,16,0
+112,Gambia,99,0
+113,Guinea,38,0
+114,Algeria,63,0
+115,Ghana,81,0
+116,Break3,56,0
+117,Burundi,80,0
+118,Lesotho,97,0
+119,Malawi,78,0
+120,Togo,49,0
+121,W. Sahara,82,0
+122,Niger,28,0
+123,Nigeria,88,0
+124,Chad,93,0
+125,Liberia,95,0
+126,Egypt,74,0
+127,Benin,16,0
+128,Gabon,24,0
+129,Tanzania,26,0
+130,Somalia,11,0
+131,Kenya,31,0
+132,Mali,83,0
+133,Sierra Leone,24,0
+134,Algiers,55,0
+135,Dahomey,52,0
+136,Namibia,43,0
+137,Senegal,43,0
+138,Libya,35,0
+139,Cameroon,62,0
+140,Congo,11,0
+141,Dem. Rep. Congo,89,0
+142,Ethiopia,95,0
+143,Guinea-Bissau,28,0
+144,Madagascar,16,0
+145,Rwanda,77,0
+146,Mayotte,87,0
+147,Cayman Is.,65,0
+148,Hong Kong,57,0
+149,United Arab Emirates,47,0
+150,Qatar,77,0
+151,Yugoslavia,62,0
+152,Crete,75,0
+153,Mauritania,61,0
+154,Transylvania,25,0
+155,Monaco,70,0
+156,Liechtenstein,56,0
+157,Malta,91,0
+158,West Bank,64,0
+159,Fiji,23,0
+160,Australia,24,0
+161,Sudan,51,0

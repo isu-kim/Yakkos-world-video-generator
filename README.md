@@ -33,5 +33,11 @@ This script uses following dependencies
 2.  `brew install ffmpeg`  (or  `brew`  like manager)
 3.  `pip install pandas`
 
+### Windows
+1.  Git clone this repository
+2.  Install `ffmpeg`. (Make sure that you can use command `ffmpeg` on `cmd`)
+3.  `pip install pandas`
+
 ## How to use
 Check [here](https://github.com/gooday2die/Yakkos-world-video-generator/blob/main/howto.md) for more information on how to use this program.
+
